@@ -1,5 +1,5 @@
-const int numLEDs = 4; //Numero de leds que vamos a poner
-const int ledPins[numLEDs] = {32, 40, 44, 48};
+const int numLEDs = 3; //Numero de leds que vamos a poner
+const int ledPins[numLEDs] = {32, 40, 48};
 int option;
 
 void setup() {
@@ -18,25 +18,16 @@ void loop() {
       digitalWrite(ledPins[0], HIGH);
       digitalWrite(ledPins[1], LOW);      
       digitalWrite(ledPins[2], LOW);
-      digitalWrite(ledPins[3], LOW);
     }
     if (option == '2'){
       digitalWrite(ledPins[0], LOW);
       digitalWrite(ledPins[1], HIGH);      
       digitalWrite(ledPins[2], LOW);
-      digitalWrite(ledPins[3], LOW);
     }
     if (option == '3'){
       digitalWrite(ledPins[0], LOW);
       digitalWrite(ledPins[1], LOW);      
       digitalWrite(ledPins[2], HIGH);
-      digitalWrite(ledPins[3], LOW);
-    }
-    if (option == '4'){
-      digitalWrite(ledPins[0], LOW);
-      digitalWrite(ledPins[1], LOW);      
-      digitalWrite(ledPins[2], LOW);
-      digitalWrite(ledPins[3], HIGH);
     }
   }
 }
